@@ -1,0 +1,19 @@
+<div
+  class="card"
+  style="width: 18rem;margin:10px; width:96% ; padding:10px;text-align: center; background-color: orange;"
+>
+  <div>
+    <label for="cn">Capital R$</label><br />
+    <input id="cn" [(ngModel)]="pv" style="width: 100px;" /><br />
+    <strong>X</strong><br />
+    <label for="tx">Taxa de Juros (%)</label><br />
+    <input id="tx" [(ngModel)]="i" style="width: 100px;" /><br /><strong
+      >X</strong
+    ><br />
+    <label for="ta">Tempo da Aplicação</label><br />
+    <input id="ta" [(ngModel)]="n" style="width: 100px;" /><br /><strong
+      >=</strong
+    ><br />
+    <div class="card">{{ prestacao() | currency }}</div>
+  </div>
+</div>
